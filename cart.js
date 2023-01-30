@@ -67,7 +67,8 @@ function addItemToCart(title, price, imageSrc) {
 
   for (var i = 0; i < cartItemNames.length; i++) {
     if (cartItemNames[i].innerText == title) {
-      alert("Produk yang anda beli sudah ada didalam keranjang belanja");
+      swal("Maaf!", "Produk yang anda beli sudah ada didalam keranjang belanja!", "error");
+      // alert("Produk yang anda beli sudah ada didalam keranjang belanja");
       return;
     }
   }
